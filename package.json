@@ -1,0 +1,15 @@
+{
+  "name": "tech-notes",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Data × AI · 技术笔记的 VitePress 学习站",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}

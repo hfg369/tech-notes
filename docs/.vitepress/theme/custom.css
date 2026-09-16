@@ -1,0 +1,289 @@
+:root {
+  --vp-c-brand-1: #0f766e;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #14b8a6;
+  --vp-c-brand-soft: rgba(13, 148, 136, 0.14);
+  --vp-c-bg: #fbfdfc;
+  --vp-c-bg-alt: #f1f7f6;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-text-1: #123438;
+  --vp-c-text-2: #456064;
+  --vp-c-text-3: #6e8588;
+  --vp-c-divider: #d9e9e7;
+  --vp-c-gutter: #edf5f4;
+  --vp-font-family-base: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --vp-font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --vp-home-hero-name-color: var(--vp-c-text-1);
+  --vp-home-hero-name-background: linear-gradient(120deg, #0f766e 18%, #164e63 82%);
+  --vp-home-hero-image-background-image: linear-gradient(140deg, rgba(20, 184, 166, 0.22), rgba(22, 78, 99, 0.08));
+  --vp-home-hero-image-filter: blur(52px);
+}
+
+.dark {
+  --vp-c-brand-1: #5eead4;
+  --vp-c-brand-2: #2dd4bf;
+  --vp-c-brand-3: #14b8a6;
+  --vp-c-brand-soft: rgba(45, 212, 191, 0.16);
+  --vp-c-bg: #0c1d20;
+  --vp-c-bg-alt: #10282b;
+  --vp-c-bg-elv: #132e31;
+  --vp-c-text-1: #e3f3f1;
+  --vp-c-text-2: #b1ccca;
+  --vp-c-text-3: #85a4a3;
+  --vp-c-divider: #244345;
+  --vp-c-gutter: #0b2023;
+  --vp-home-hero-name-background: linear-gradient(120deg, #99f6e4 18%, #7dd3fc 82%);
+  --vp-home-hero-image-background-image: linear-gradient(140deg, rgba(45, 212, 191, 0.16), rgba(125, 211, 252, 0.08));
+}
+
+body {
+  letter-spacing: 0.005em;
+}
+
+.VPNavBar {
+  background-color: color-mix(in srgb, var(--vp-c-bg) 88%, transparent);
+  backdrop-filter: blur(14px);
+  border-bottom-color: color-mix(in srgb, var(--vp-c-divider) 74%, transparent);
+}
+
+.VPNavBarTitle .title {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.VPHero {
+  padding-top: 112px !important;
+  padding-bottom: 72px !important;
+}
+
+.VPHero .name {
+  font-size: clamp(2.7rem, 8vw, 5.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+}
+
+.VPHero .text {
+  max-width: 12ch;
+  color: var(--vp-c-text-1);
+  font-size: clamp(2rem, 5.3vw, 3.5rem);
+  line-height: 1.16;
+  letter-spacing: -0.035em;
+}
+
+.VPHero .tagline {
+  max-width: 34rem;
+  color: var(--vp-c-text-2);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.VPHero .actions {
+  gap: 12px;
+}
+
+.VPHero .VPButton {
+  border-radius: 999px;
+  padding: 0 22px;
+  font-weight: 650;
+  transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.VPHero .VPButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(15, 118, 110, 0.18);
+}
+
+.VPHomeFeatures {
+  padding-top: 12px !important;
+}
+
+.home-intro {
+  max-width: 760px;
+  margin: 14px auto 80px;
+  padding: 32px 34px 30px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--vp-c-bg-elv) 90%, var(--vp-c-brand-soft));
+  box-shadow: 0 14px 34px rgba(18, 52, 56, 0.05);
+}
+
+.home-intro h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.home-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-text-2);
+  font-size: 0.92rem;
+}
+
+.home-note-mark {
+  flex: 0 0 auto;
+  color: var(--vp-c-brand-1);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.VPFeature {
+  border: 1px solid var(--vp-c-divider) !important;
+  border-radius: 18px !important;
+  background: color-mix(in srgb, var(--vp-c-bg-elv) 88%, var(--vp-c-brand-soft)) !important;
+  box-shadow: 0 12px 34px rgba(18, 52, 56, 0.045);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.VPFeature:hover {
+  border-color: color-mix(in srgb, var(--vp-c-brand-2) 55%, var(--vp-c-divider)) !important;
+  box-shadow: 0 18px 38px rgba(18, 52, 56, 0.09);
+  transform: translateY(-3px);
+}
+
+.VPFeature .title {
+  color: var(--vp-c-text-1);
+  font-weight: 700;
+}
+
+.VPFeature .details {
+  line-height: 1.75;
+}
+
+.vp-doc {
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.vp-doc h2 {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--vp-c-divider);
+  letter-spacing: -0.02em;
+}
+
+.vp-doc h3 {
+  margin-top: 2.4rem;
+  letter-spacing: -0.01em;
+}
+
+.vp-doc strong {
+  color: var(--vp-c-text-1);
+  font-weight: 700;
+}
+
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand-2);
+  border-radius: 0 10px 10px 0;
+  background: var(--vp-c-brand-soft);
+  padding: 10px 18px;
+  color: var(--vp-c-text-2);
+}
+
+.vp-doc code {
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-2) 18%, transparent);
+  border-radius: 5px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 14px;
+  box-shadow: 0 10px 26px rgba(18, 52, 56, 0.06);
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.vp-doc th {
+  background: var(--vp-c-bg-alt);
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc tr:nth-child(2n) {
+  background: color-mix(in srgb, var(--vp-c-bg-alt) 52%, transparent);
+}
+
+.custom-block {
+  border-radius: 12px;
+}
+
+.VPFooter {
+  border-top-color: var(--vp-c-divider);
+}
+
+@media (max-width: 960px) {
+  .VPHero {
+    padding-top: 84px !important;
+    padding-bottom: 54px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .VPHero {
+    padding-top: 62px !important;
+    padding-bottom: 42px !important;
+  }
+
+  .VPHero .name {
+    font-size: clamp(2.65rem, 15vw, 4.2rem);
+  }
+
+  .VPHero .text {
+    max-width: 100%;
+    font-size: 2rem;
+  }
+
+  .VPHero .tagline {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .VPHero .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .VPHero .VPButton {
+    width: 100%;
+    text-align: center;
+  }
+
+  .VPFeature {
+    border-radius: 14px !important;
+  }
+
+  .home-intro {
+    margin: 8px 0 52px;
+    padding: 24px 20px;
+    border-radius: 15px;
+  }
+
+  .home-note {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .vp-doc {
+    font-size: 15px;
+  }
+
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
