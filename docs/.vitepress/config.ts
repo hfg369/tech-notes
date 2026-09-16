@@ -16,6 +16,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '学习路线', link: '/roadmap' },
+      { text: '项目推荐', link: '/projects' },
       {
         text: '技术笔记',
         items: [
@@ -34,6 +35,21 @@ export default defineConfig({
             { text: 'SQL：一对多关联为何会重复计数', link: '/notes/sql-one-to-many' },
             { text: 'Agent 的决策机制', link: '/notes/agent-decision-mechanism' },
             { text: 'Spark 慢作业诊断实验（计划）', link: '/notes/spark-slow-job-lab' }
+          ]
+        },
+        {
+          text: '站点信息',
+          items: [
+            { text: '学习路线', link: '/roadmap' },
+            { text: '关于本站', link: '/about' }
+          ]
+        }
+      ],
+      '/projects': [
+        {
+          text: 'GitHub 项目推荐',
+          items: [
+            { text: '七个项目与整合练习', link: '/projects' }
           ]
         },
         {

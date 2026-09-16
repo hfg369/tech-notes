@@ -11,6 +11,8 @@ description: 面向数据工程与 Data Agent 的分阶段学习计划，所有�
 
 希望逐步具备这样的能力：拿到一个数据或 Agent 需求时，能够先定义目标和数据口径，再设计处理流程，写出可运行实现，定位失败原因，并用测试或实验说明结果是否可信。
 
+配套的开源项目入口见 [GitHub 项目推荐](/projects)。主路线是 `jaffle-shop → Zoomcamp/Spark → Vanna`，LangGraph 按需加入，Flink 放到实时数据阶段选修。
+
 ## 四个阶段
 
 ### 01 · Python 与 SQL 基础（计划中）

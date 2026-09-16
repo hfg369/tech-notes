@@ -39,6 +39,8 @@ features:
 
 如果想把零散主题串成一条路线，可以从 [学习路线](/roadmap) 开始。
 
+准备动手做项目时，查看 [GitHub 项目推荐](/projects)，按“建模 → 批处理 → 问数 → 编排 → 实时处理”的顺序选择练习即可，不需要一次安装全部组件。
+
 <div class="home-note">
   <span class="home-note-mark">学习状态</span>
   <span>持续整理中 · 先完成小而完整的实验，再扩大工具范围</span>
